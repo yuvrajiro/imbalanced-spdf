@@ -1,0 +1,20 @@
+/venv/
+/imbalanced_ensemble.egg-info/
+docs/user_guide/Trial.ipynb
+docs/user_guide/Decision Boundary.ipynb
+docs/user_guide/Simulation Study.ipynb
+docs/user_guide/fig
+*.egg-info/
+# Python cache files
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+env/
+
+# PyCharm files
+.idea/
+
+# System files
+.DS_Store

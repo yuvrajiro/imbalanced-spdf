@@ -1,0 +1,86 @@
+# pyproject.toml
+
+[build-system]
+requires      = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "imbalanced-spbdf"
+version = "0.0.1"
+description = "A Python package for imbalanced learning with ensemble learning."
+readme = "README.md"
+authors = [{ name = "Rahul Goswami", email = "yuvrajiro@gmail.com" },
+    {name = "Tanujit Chakraborty", email = "ctanujit@gmail.com"}]
+license = { file = "LICENSE" }
+
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["Proximity", "Machine Learning", "Survival Analysis", "Ensemble Learning"]
+dependencies = [
+    "scikit-learn~=1.5.0",
+    "numpy~=1.24.0",
+    "pandas~=2.2.2",
+]
+requires-python = ">=3.9"
+
+
+[project.urls]
+"Homepage" = "https://github.com/yuvrajiro/imbalanced"
+"Documentation" = "https://imbalanced.readthedocs.io"
+"Source Code" = "https://github.com/yuvrajiro/imbalanced"
+"Bug Tracker" = "https://github.com/yuvrajiro/imbalanced/issues"
+"Release Notes" = "https://imbalanced.readthedocs.io/en/latest/release_notes.html"
+
+
+
+[project.optional-dependencies]
+dev = [
+    "black[jupyter]",
+    "build",
+    "coverage",
+    "cython >=0.29",
+    "packaging",
+    "pre-commit",
+    "pytest",
+    "ruff",
+    "setuptools-scm >=6.4",
+    "tomli",
+    "tox",
+]
+
+# This file purposely does not contain libraries that depend on C modules.
+# See https://docs.readthedocs.io/en/latest/faq.html#i-get-import-errors-on-libraries-that-depend-on-c-modules
+docs = [
+    "ipython !=8.7.0",
+    "nbsphinx>=0.9.2",
+    "docutils",
+    "setuptools-scm",
+    "sphinx ~=6.2.1",
+    "pydata-sphinx-theme ~=0.13.3",
+    "sphinxcontrib-spelling",
+    "sphinx-design ~=0.4.1",
+    "sphinx-copybutton ~=0.5.2",
+]
+
+nbval = [
+    "ipykernel",
+    "ipython!=8.7.0",
+    "matplotlib~=3.6.2",
+    "nbformat",
+    "nbval>=0.10.0",
+    "seaborn~=0.11.2",
+]
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+include = ["imbalanced*"]
+namespaces = false
+
+
+#extensions = ['sphinx.ext.autodoc']
+
