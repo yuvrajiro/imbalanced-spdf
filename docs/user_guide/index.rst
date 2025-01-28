@@ -7,7 +7,7 @@ This page containg use cases of Cobra Ensemble for Conditional Survival. The pro
 its early phase but sooll will be equipped with more use cases.
 
 
-imbalanced_spbdf
+imbalanced_spdf
 -------
 
 .. toctree::

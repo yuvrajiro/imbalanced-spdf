@@ -1,7 +1,7 @@
-﻿imbalanced_spbdf.SPBaDF
+﻿imbalanced_spdf.SPBaDF
 =================
 
-.. currentmodule:: imbalanced_spbdf
+.. currentmodule:: imbalanced_spdf
 
 .. autoclass:: SPBaDF
 

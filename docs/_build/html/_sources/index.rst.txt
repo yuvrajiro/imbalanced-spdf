@@ -1,6 +1,6 @@
-.. imbalanced_spbdf documentation master file
+.. imbalanced_spdf documentation master file
 
-imbalanced_spbdf - Ensemble for Imbalanced Classification
+imbalanced_spdf - Ensemble for Imbalanced Classification
 =======================================================
 
 
@@ -13,10 +13,10 @@ imbalanced_spbdf - Ensemble for Imbalanced Classification
         :link: install
         :link-type: doc
 
-        The simplest way to install imbalanced_spbdf is by using Python's package manager pip:
+        The simplest way to install imbalanced_spdf is by using Python's package manager pip:
 
         ```
-        pip install imbalanced_spbdf
+        pip install imbalanced_spdf
         ```
 
     .. grid-item-card:: Jupyter Notebook Example for SPBaDF :fas:`book-open`
@@ -29,13 +29,13 @@ imbalanced_spbdf - Ensemble for Imbalanced Classification
         :link: api/index
         :link-type: doc
 
-        The API reference guide provides a detailed description of the imbalanced_spbdf API, including available classes, functions, and their parameters.
+        The API reference guide provides a detailed description of the imbalanced_spdf API, including available classes, functions, and their parameters.
 
     .. grid-item-card:: Contributing :fas:`code`
         :link: contributing
         :link-type: doc
 
-        Found a typo in the documentation? Have ideas for new features? We welcome your contributions! The contributing guidelines will help you set up a development environment and submit your changes to the imbalanced_spbdf team.
+        Found a typo in the documentation? Have ideas for new features? We welcome your contributions! The contributing guidelines will help you set up a development environment and submit your changes to the imbalanced_spdf team.
 
 
 .. toctree::

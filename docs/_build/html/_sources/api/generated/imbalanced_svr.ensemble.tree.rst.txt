@@ -1,7 +1,7 @@
 ﻿imbalanced\_svr.ensemble.tree
 =============================
 
-.. currentmodule:: imbalanced_spbdf.ensemble
+.. currentmodule:: imbalanced_spdf.ensemble
 
 .. autoclass:: tree
 

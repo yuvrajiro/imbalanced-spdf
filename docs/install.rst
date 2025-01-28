@@ -1,11 +1,11 @@
-Installing imbalanced_spbdf
+Installing imbalanced_spdf
 =====================
 
-The easiest way to install imbalanced_spbdf is using `pip`:
+The easiest way to install imbalanced_spdf is using `pip`:
 
-    pip install imbalanced_spbdf
+    pip install imbalanced_spdf
 
-The current minimum dependencies to run imbalanced_spbdf are:
+The current minimum dependencies to run imbalanced_spdf are:
 
 
 - scikit-learn~=1.2.2

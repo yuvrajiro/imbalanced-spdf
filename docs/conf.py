@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# imbalanced_spbdf documentation build configuration file
+# imbalanced_spdf documentation build configuration file
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -19,7 +19,7 @@ import os
 from pathlib import Path
 import re
 import sys
-#import imbalanced_spbdf
+#import imbalanced_spdf
 from nbconvert.preprocessors import Preprocessor
 import nbsphinx
 
@@ -88,7 +88,7 @@ source_suffix = ".rst"
 master_doc = "index"
 
 # General information about the project.
-project = "imbalanced_spbdf"
+project = "imbalanced_spdf"
 current_year = datetime.utcnow().year
 copyright = f"2025-{current_year}, Rahul Goswami"
 
@@ -169,7 +169,7 @@ html_theme_options = {
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-html_title = f"imbalanced_spbdf {version}"
+html_title = f"imbalanced_spdf {version}"
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 # html_short_title = None

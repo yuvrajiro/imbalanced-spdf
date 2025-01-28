@@ -72,7 +72,7 @@ class SPBaDF(BaseEstimator, ClassifierMixin):
     Shape Penalty Bagging Decision Forest (SPBaDF)
 
     Implements a bagging ensemble using Shape Penalty Regularized Trees for
-    imbalanced_spbdf classification. Each tree is trained on a bootstrap sample
+    imbalanced_spdf classification. Each tree is trained on a bootstrap sample
     and uses a subset of non-constant features.
 
     Parameters
@@ -206,7 +206,7 @@ class SPBoDF(BaseEstimator, ClassifierMixin):
     """
     Shape Penalty Boosting Decision Forest (SPBoDF)
 
-    This class implements a boosting ensemble method for imbalanced_spbdf data using
+    This class implements a boosting ensemble method for imbalanced_spdf data using
     SVR (Surface-to-Volume Regularization) trees. The ensemble is trained to
     optimize decision boundaries, balancing interpretability with generalization
     by penalizing irregular decision surfaces.
@@ -296,16 +296,21 @@ class SPBoDF(BaseEstimator, ClassifierMixin):
 
         for i in range(self.n_trees):
             # Boost one SVR tree
-            sample_weight, estimator_weight, _, selected_columns = self._boost_svr(
+            sample_weight, estimator_weight, _, selected_columns, estimator = self._boost_svr(
                 i, X, y, sample_weight, rng
             )
 
             # Update ensemble if boosting round is successful
             if sample_weight is None:
                 break
-            self.estimators_.append(estimator_weight)
+            self.estimator_weights_.append(estimator_weight)
             self.columns_to_take_.append(selected_columns)
+            self.estimators_.append(estimator)
             sample_weight /= np.sum(sample_weight)
+
+        # warning if the number of trees is less than n_trees
+        if len(self.estimators_) < self.n_trees:
+            print(f"Warning: Only {len(self.estimators_)} trees were trained, because the error rate was 0 or 1. Try with different random seed or bigger dataset.")
 
         return self
 
@@ -325,6 +330,9 @@ class SPBoDF(BaseEstimator, ClassifierMixin):
         """
         # Check if the classifier is fitted
         check_is_fitted(self, ["estimators_", "estimator_weights_", "columns_to_take_"])
+
+        if len(self.estimators_) == 0:
+            raise ValueError("No trees were trained. Please fit the model first. If already fitted, try with different random seed or bigger dataset.")
 
         # Validate X
         X = check_array(X)
@@ -374,6 +382,7 @@ class SPBoDF(BaseEstimator, ClassifierMixin):
         """
         # Create a new tree estimator
         estimator = tree()
+        # print(f"iboost: {iboost}")
 
         # Bootstrap sampling with replacement
         row_indices = rng.choice(np.arange(X.shape[0]), size=X.shape[0], replace=True, p=sample_weight)
@@ -403,20 +412,14 @@ class SPBoDF(BaseEstimator, ClassifierMixin):
 
         # Handle edge cases for error
         if estimator_error == 0 or estimator_error >= 1.0 - (1.0 / len(self.classes_)):
-            return None, None, None, None
+            return None, None, None, None, None
 
         # Compute weight of the estimator
         estimator_weight = 0.5 * np.log((1.0 - estimator_error) / estimator_error)
 
         # Update sample weights
-        sample_weight *= np.exp(estimator_weight * (2 * incorrect - 1))
+        sample_weight *= np.exp(estimator_weight * (2 * incorrect - 1)) * (sample_weight > 0)
 
-        return sample_weight, estimator_weight, estimator_error, valid_features
-
-
-
-
-
-
+        return sample_weight, estimator_weight, estimator_error, valid_features, estimator
 
 

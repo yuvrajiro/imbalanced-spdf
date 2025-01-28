@@ -1,4 +1,4 @@
-"""imbalanced_spbdf is a python package for imbalanced_spbdf data handling in machine learning."""
+"""imbalanced_spdf is a python package for imbalanced_spdf data handling in machine learning."""
 
 __author__ = """Rahul Goswami"""
 __email__ = 'yuvrajiro@gmail.com'

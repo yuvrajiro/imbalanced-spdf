@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>imbalanced_spbdf.SPBoDF &#8212; imbalanced_spbdf 0.0.1</title>
+    <title>imbalanced_spdf.SPBoDF &#8212; imbalanced_spdf 0.0.1</title>
   
   
   
@@ -110,7 +110,7 @@
   
   
   
-    <p class="title logo__title">imbalanced_spbdf 0.0.1</p>
+    <p class="title logo__title">imbalanced_spdf 0.0.1</p>
   
 </a></div>
     
@@ -214,7 +214,7 @@ document.write(`
         <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
     aria-label="Icon Links">
   <li class="nav-item">
-    <a class="nav-link github-button" href="https://github.com/yuvrajiro/imbalanced_spbdf" rel="noopener" target="_blank" title="imbalanced_spbdf">
+    <a class="nav-link github-button" href="https://github.com/yuvrajiro/imbalanced_spdf" rel="noopener" target="_blank" title="imbalanced_spdf">
         <span class="github-icon"><i class="fa-brands fa-github"></i></span>
     </a>
   </li>
@@ -339,7 +339,7 @@ document.write(`
           <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
     aria-label="Icon Links">
   <li class="nav-item">
-    <a class="nav-link github-button" href="https://github.com/yuvrajiro/imbalanced_spbdf" rel="noopener" target="_blank" title="imbalanced_spbdf">
+    <a class="nav-link github-button" href="https://github.com/yuvrajiro/imbalanced_spdf" rel="noopener" target="_blank" title="imbalanced_spdf">
         <span class="github-icon"><i class="fa-brands fa-github"></i></span>
     </a>
   </li>
@@ -381,7 +381,7 @@ document.write(`
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
-    <li class="breadcrumb-item active" aria-current="page">imbalanced_spbdf.SPBoDF</li>
+    <li class="breadcrumb-item active" aria-current="page">imbalanced_spdf.SPBoDF</li>
   </ul>
 </nav>
 </div>
@@ -399,12 +399,12 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section id="imbalanced-svr-spbodf">
-<h1>imbalanced_spbdf.SPBoDF<a class="headerlink" href="#imbalanced-svr-spbodf" title="Permalink to this heading">#</a></h1>
+<h1>imbalanced_spdf.SPBoDF<a class="headerlink" href="#imbalanced-svr-spbodf" title="Permalink to this heading">#</a></h1>
 <dl class="py class">
-<dt class="sig sig-object py" id="imbalanced_spbdf.SPBoDF">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">imbalanced_spbdf.</span></span><span class="sig-name descname"><span class="pre">SPBoDF</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n_trees</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">40</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weight</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pen</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maximal_leaves</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">23</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#imbalanced_spbdf.SPBoDF" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py" id="imbalanced_spdf.SPBoDF">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">imbalanced_spdf.</span></span><span class="sig-name descname"><span class="pre">SPBoDF</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n_trees</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">40</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weight</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pen</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maximal_leaves</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">23</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#imbalanced_spdf.SPBoDF" title="Permalink to this definition">#</a></dt>
 <dd><p>Shape Penalty Boosting Decision Forest (SPBoDF)</p>
-<p>This class implements a boosting ensemble method for imbalanced_spbdf data using
+<p>This class implements a boosting ensemble method for imbalanced_spdf data using
 SVR (Surface-to-Volume Regularization) trees. The ensemble is trained to
 optimize decision boundaries, balancing interpretability with generalization
 by penalizing irregular decision surfaces.</p>
@@ -423,8 +423,8 @@ represented as α_n in the research paper.</p></li>
 </dd>
 </dl>
 <dl class="py attribute">
-<dt class="sig sig-object py" id="imbalanced_spbdf.SPBoDF.estimators_">
-<span class="sig-name descname"><span class="pre">estimators_</span></span><a class="headerlink" href="#imbalanced_spbdf.SPBoDF.estimators_" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py" id="imbalanced_spdf.SPBoDF.estimators_">
+<span class="sig-name descname"><span class="pre">estimators_</span></span><a class="headerlink" href="#imbalanced_spdf.SPBoDF.estimators_" title="Permalink to this definition">#</a></dt>
 <dd><p>List of fitted tree estimators in the ensemble.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type<span class="colon">:</span></dt>
@@ -434,8 +434,8 @@ represented as α_n in the research paper.</p></li>
 </dd></dl>
 
 <dl class="py attribute">
-<dt class="sig sig-object py" id="imbalanced_spbdf.SPBoDF.estimator_weights_">
-<span class="sig-name descname"><span class="pre">estimator_weights_</span></span><a class="headerlink" href="#imbalanced_spbdf.SPBoDF.estimator_weights_" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py" id="imbalanced_spdf.SPBoDF.estimator_weights_">
+<span class="sig-name descname"><span class="pre">estimator_weights_</span></span><a class="headerlink" href="#imbalanced_spdf.SPBoDF.estimator_weights_" title="Permalink to this definition">#</a></dt>
 <dd><p>List of weights associated with each tree in the ensemble.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type<span class="colon">:</span></dt>
@@ -445,8 +445,8 @@ represented as α_n in the research paper.</p></li>
 </dd></dl>
 
 <dl class="py attribute">
-<dt class="sig sig-object py" id="imbalanced_spbdf.SPBoDF.columns_to_take_">
-<span class="sig-name descname"><span class="pre">columns_to_take_</span></span><a class="headerlink" href="#imbalanced_spbdf.SPBoDF.columns_to_take_" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py" id="imbalanced_spdf.SPBoDF.columns_to_take_">
+<span class="sig-name descname"><span class="pre">columns_to_take_</span></span><a class="headerlink" href="#imbalanced_spdf.SPBoDF.columns_to_take_" title="Permalink to this definition">#</a></dt>
 <dd><p>List of feature subsets selected for each tree, useful for analyzing feature importance.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type<span class="colon">:</span></dt>
@@ -456,8 +456,8 @@ represented as α_n in the research paper.</p></li>
 </dd></dl>
 
 <dl class="py attribute">
-<dt class="sig sig-object py" id="imbalanced_spbdf.SPBoDF.classes_">
-<span class="sig-name descname"><span class="pre">classes_</span></span><a class="headerlink" href="#imbalanced_spbdf.SPBoDF.classes_" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py" id="imbalanced_spdf.SPBoDF.classes_">
+<span class="sig-name descname"><span class="pre">classes_</span></span><a class="headerlink" href="#imbalanced_spdf.SPBoDF.classes_" title="Permalink to this definition">#</a></dt>
 <dd><p>Unique class labels observed during training.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type<span class="colon">:</span></dt>
@@ -467,42 +467,42 @@ represented as α_n in the research paper.</p></li>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="imbalanced_spbdf.SPBoDF.__init__">
-<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n_trees</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">40</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weight</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pen</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maximal_leaves</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">23</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#imbalanced_spbdf.SPBoDF.__init__" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py" id="imbalanced_spdf.SPBoDF.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n_trees</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">40</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weight</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pen</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maximal_leaves</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">23</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#imbalanced_spdf.SPBoDF.__init__" title="Permalink to this definition">#</a></dt>
 <dd></dd></dl>
 
 <p class="rubric">Methods</p>
 <table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="imbalanced_spbdf.SPBoDF.html#imbalanced_spbdf.SPBoDF.__init__" title="imbalanced_spbdf.SPBoDF.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>([n_trees, weight, pen, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="imbalanced_spdf.SPBoDF.html#imbalanced_spdf.SPBoDF.__init__" title="imbalanced_spdf.SPBoDF.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>([n_trees, weight, pen, ...])</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="imbalanced_spbdf.SPBoDF.html#imbalanced_spbdf.SPBoDF.fit" title="imbalanced_spbdf.SPBoDF.fit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fit</span></code></a>(X, y)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="imbalanced_spdf.SPBoDF.html#imbalanced_spdf.SPBoDF.fit" title="imbalanced_spdf.SPBoDF.fit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fit</span></code></a>(X, y)</p></td>
 <td><p>Train the SPBoDF ensemble on the given dataset.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="imbalanced_spbdf.SPBoDF.html#imbalanced_spbdf.SPBoDF.get_metadata_routing" title="imbalanced_spbdf.SPBoDF.get_metadata_routing"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_metadata_routing</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="imbalanced_spdf.SPBoDF.html#imbalanced_spdf.SPBoDF.get_metadata_routing" title="imbalanced_spdf.SPBoDF.get_metadata_routing"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_metadata_routing</span></code></a>()</p></td>
 <td><p>Get metadata routing of this object.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="imbalanced_spbdf.SPBoDF.html#imbalanced_spbdf.SPBoDF.get_params" title="imbalanced_spbdf.SPBoDF.get_params"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_params</span></code></a>([deep])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="imbalanced_spdf.SPBoDF.html#imbalanced_spdf.SPBoDF.get_params" title="imbalanced_spdf.SPBoDF.get_params"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_params</span></code></a>([deep])</p></td>
 <td><p>Get parameters for this estimator.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="imbalanced_spbdf.SPBoDF.html#imbalanced_spbdf.SPBoDF.predict" title="imbalanced_spbdf.SPBoDF.predict"><code class="xref py py-obj docutils literal notranslate"><span class="pre">predict</span></code></a>(X)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="imbalanced_spdf.SPBoDF.html#imbalanced_spdf.SPBoDF.predict" title="imbalanced_spdf.SPBoDF.predict"><code class="xref py py-obj docutils literal notranslate"><span class="pre">predict</span></code></a>(X)</p></td>
 <td><p>Predict labels for input samples using the trained ensemble.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="imbalanced_spbdf.SPBoDF.html#imbalanced_spbdf.SPBoDF.score" title="imbalanced_spbdf.SPBoDF.score"><code class="xref py py-obj docutils literal notranslate"><span class="pre">score</span></code></a>(X, y[, sample_weight])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="imbalanced_spdf.SPBoDF.html#imbalanced_spdf.SPBoDF.score" title="imbalanced_spdf.SPBoDF.score"><code class="xref py py-obj docutils literal notranslate"><span class="pre">score</span></code></a>(X, y[, sample_weight])</p></td>
 <td><p>Return the mean accuracy on the given test data and labels.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="imbalanced_spbdf.SPBoDF.html#imbalanced_spbdf.SPBoDF.set_params" title="imbalanced_spbdf.SPBoDF.set_params"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_params</span></code></a>(**params)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="imbalanced_spdf.SPBoDF.html#imbalanced_spdf.SPBoDF.set_params" title="imbalanced_spdf.SPBoDF.set_params"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_params</span></code></a>(**params)</p></td>
 <td><p>Set the parameters of this estimator.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="imbalanced_spbdf.SPBoDF.html#imbalanced_spbdf.SPBoDF.set_score_request" title="imbalanced_spbdf.SPBoDF.set_score_request"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_score_request</span></code></a>(*[, sample_weight])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="imbalanced_spdf.SPBoDF.html#imbalanced_spdf.SPBoDF.set_score_request" title="imbalanced_spdf.SPBoDF.set_score_request"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_score_request</span></code></a>(*[, sample_weight])</p></td>
 <td><p>Request metadata passed to the <code class="docutils literal notranslate"><span class="pre">score</span></code> method.</p></td>
 </tr>
 </tbody>
 </table>
 <dl class="py method">
-<dt class="sig sig-object py" id="imbalanced_spbdf.SPBoDF.fit">
-<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#imbalanced_spbdf.SPBoDF.fit" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py" id="imbalanced_spdf.SPBoDF.fit">
+<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#imbalanced_spdf.SPBoDF.fit" title="Permalink to this definition">#</a></dt>
 <dd><p>Train the SPBoDF ensemble on the given dataset.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -515,14 +515,14 @@ represented as α_n in the research paper.</p></li>
 <dd class="field-even"><p><strong>self</strong> – Returns the instance of the fitted ensemble.</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference internal" href="imbalanced_spbdf.SPBoDF.html#imbalanced_spbdf.SPBoDF" title="imbalanced_spbdf.SPBoDF">SPBoDF</a></p>
+<dd class="field-odd"><p><a class="reference internal" href="imbalanced_spdf.SPBoDF.html#imbalanced_spdf.SPBoDF" title="imbalanced_spdf.SPBoDF">SPBoDF</a></p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="imbalanced_spbdf.SPBoDF.get_metadata_routing">
-<span class="sig-name descname"><span class="pre">get_metadata_routing</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#imbalanced_spbdf.SPBoDF.get_metadata_routing" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py" id="imbalanced_spdf.SPBoDF.get_metadata_routing">
+<span class="sig-name descname"><span class="pre">get_metadata_routing</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#imbalanced_spdf.SPBoDF.get_metadata_routing" title="Permalink to this definition">#</a></dt>
 <dd><p>Get metadata routing of this object.</p>
 <p>Please check <a class="reference external" href="https://scikit-learn.org/1.3/metadata_routing.html#metadata-routing" title="(in scikit-learn v1.3)"><span class="xref std std-ref">User Guide</span></a> on how the routing
 mechanism works.</p>
@@ -538,8 +538,8 @@ routing information.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="imbalanced_spbdf.SPBoDF.get_params">
-<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#imbalanced_spbdf.SPBoDF.get_params" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py" id="imbalanced_spdf.SPBoDF.get_params">
+<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#imbalanced_spdf.SPBoDF.get_params" title="Permalink to this definition">#</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -556,8 +556,8 @@ contained subobjects that are estimators.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="imbalanced_spbdf.SPBoDF.predict">
-<span class="sig-name descname"><span class="pre">predict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#imbalanced_spbdf.SPBoDF.predict" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py" id="imbalanced_spdf.SPBoDF.predict">
+<span class="sig-name descname"><span class="pre">predict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#imbalanced_spdf.SPBoDF.predict" title="Permalink to this definition">#</a></dt>
 <dd><p>Predict labels for input samples using the trained ensemble.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -573,8 +573,8 @@ contained subobjects that are estimators.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="imbalanced_spbdf.SPBoDF.score">
-<span class="sig-name descname"><span class="pre">score</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sample_weight</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#imbalanced_spbdf.SPBoDF.score" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py" id="imbalanced_spdf.SPBoDF.score">
+<span class="sig-name descname"><span class="pre">score</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sample_weight</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#imbalanced_spdf.SPBoDF.score" title="Permalink to this definition">#</a></dt>
 <dd><p>Return the mean accuracy on the given test data and labels.</p>
 <p>In multi-label classification, this is the subset accuracy
 which is a harsh metric since you require for each sample that
@@ -597,8 +597,8 @@ each label set be correctly predicted.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="imbalanced_spbdf.SPBoDF.set_params">
-<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#imbalanced_spbdf.SPBoDF.set_params" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py" id="imbalanced_spdf.SPBoDF.set_params">
+<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#imbalanced_spdf.SPBoDF.set_params" title="Permalink to this definition">#</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as <a class="reference external" href="https://scikit-learn.org/1.3/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.3)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a>). The latter have
@@ -618,8 +618,8 @@ possible to update each component of a nested object.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="imbalanced_spbdf.SPBoDF.set_score_request">
-<span class="sig-name descname"><span class="pre">set_score_request</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sample_weight</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'$UNCHANGED$'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="imbalanced_spbdf.SPBoDF.html#imbalanced_spbdf.SPBoDF" title="imbalanced_spbdf.ensemble.SPBoDF"><span class="pre">SPBoDF</span></a></span></span><a class="headerlink" href="#imbalanced_spbdf.SPBoDF.set_score_request" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py" id="imbalanced_spdf.SPBoDF.set_score_request">
+<span class="sig-name descname"><span class="pre">set_score_request</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sample_weight</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'$UNCHANGED$'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="imbalanced_spdf.SPBoDF.html#imbalanced_spdf.SPBoDF" title="imbalanced_spdf.ensemble.SPBoDF"><span class="pre">SPBoDF</span></a></span></span><a class="headerlink" href="#imbalanced_spdf.SPBoDF.set_score_request" title="Permalink to this definition">#</a></dt>
 <dd><p>Request metadata passed to the <code class="docutils literal notranslate"><span class="pre">score</span></code> method.</p>
 <p>Note that this method is only relevant if
 <code class="docutils literal notranslate"><span class="pre">enable_metadata_routing=True</span></code> (see <a class="reference external" href="https://scikit-learn.org/1.3/modules/generated/sklearn.set_config.html#sklearn.set_config" title="(in scikit-learn v1.3)"><code class="xref py py-func docutils literal notranslate"><span class="pre">sklearn.set_config()</span></code></a>).
@@ -690,19 +690,19 @@ sub-estimator of a meta-estimator, e.g. used inside a
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#imbalanced_spbdf.SPBoDF"><code class="docutils literal notranslate"><span class="pre">SPBoDF</span></code></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imbalanced_spbdf.SPBoDF.estimators_"><code class="docutils literal notranslate"><span class="pre">SPBoDF.estimators_</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imbalanced_spbdf.SPBoDF.estimator_weights_"><code class="docutils literal notranslate"><span class="pre">SPBoDF.estimator_weights_</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imbalanced_spbdf.SPBoDF.columns_to_take_"><code class="docutils literal notranslate"><span class="pre">SPBoDF.columns_to_take_</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imbalanced_spbdf.SPBoDF.classes_"><code class="docutils literal notranslate"><span class="pre">SPBoDF.classes_</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imbalanced_spbdf.SPBoDF.__init__"><code class="docutils literal notranslate"><span class="pre">SPBoDF.__init__()</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imbalanced_spbdf.SPBoDF.fit"><code class="docutils literal notranslate"><span class="pre">SPBoDF.fit()</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imbalanced_spbdf.SPBoDF.get_metadata_routing"><code class="docutils literal notranslate"><span class="pre">SPBoDF.get_metadata_routing()</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imbalanced_spbdf.SPBoDF.get_params"><code class="docutils literal notranslate"><span class="pre">SPBoDF.get_params()</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imbalanced_spbdf.SPBoDF.predict"><code class="docutils literal notranslate"><span class="pre">SPBoDF.predict()</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imbalanced_spbdf.SPBoDF.score"><code class="docutils literal notranslate"><span class="pre">SPBoDF.score()</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imbalanced_spbdf.SPBoDF.set_params"><code class="docutils literal notranslate"><span class="pre">SPBoDF.set_params()</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imbalanced_spbdf.SPBoDF.set_score_request"><code class="docutils literal notranslate"><span class="pre">SPBoDF.set_score_request()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#imbalanced_spdf.SPBoDF"><code class="docutils literal notranslate"><span class="pre">SPBoDF</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imbalanced_spdf.SPBoDF.estimators_"><code class="docutils literal notranslate"><span class="pre">SPBoDF.estimators_</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imbalanced_spdf.SPBoDF.estimator_weights_"><code class="docutils literal notranslate"><span class="pre">SPBoDF.estimator_weights_</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imbalanced_spdf.SPBoDF.columns_to_take_"><code class="docutils literal notranslate"><span class="pre">SPBoDF.columns_to_take_</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imbalanced_spdf.SPBoDF.classes_"><code class="docutils literal notranslate"><span class="pre">SPBoDF.classes_</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imbalanced_spdf.SPBoDF.__init__"><code class="docutils literal notranslate"><span class="pre">SPBoDF.__init__()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imbalanced_spdf.SPBoDF.fit"><code class="docutils literal notranslate"><span class="pre">SPBoDF.fit()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imbalanced_spdf.SPBoDF.get_metadata_routing"><code class="docutils literal notranslate"><span class="pre">SPBoDF.get_metadata_routing()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imbalanced_spdf.SPBoDF.get_params"><code class="docutils literal notranslate"><span class="pre">SPBoDF.get_params()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imbalanced_spdf.SPBoDF.predict"><code class="docutils literal notranslate"><span class="pre">SPBoDF.predict()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imbalanced_spdf.SPBoDF.score"><code class="docutils literal notranslate"><span class="pre">SPBoDF.score()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imbalanced_spdf.SPBoDF.set_params"><code class="docutils literal notranslate"><span class="pre">SPBoDF.set_params()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imbalanced_spdf.SPBoDF.set_score_request"><code class="docutils literal notranslate"><span class="pre">SPBoDF.set_score_request()</span></code></a></li>
 </ul>
 </li>
 </ul>

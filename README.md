@@ -1,11 +1,11 @@
 ![Feature - Imbalanced Datasets](https://img.shields.io/badge/feature-imbalanced%20datasets-green?style=flat-square)
-![GitHub last commit](https://img.shields.io/github/last-commit/yuvrajiro/imbalanced-svr?style=flat-square)
-![GitHub issues](https://img.shields.io/github/issues/yuvrajiro/imbalanced-svr?style=flat-square)
-![GitHub stars](https://img.shields.io/github/stars/yuvrajiro/imbalanced-svr?style=flat-square)
+![GitHub last commit](https://img.shields.io/github/last-commit/yuvrajiro/imbalanced-spdf?style=flat-square)
+![GitHub issues](https://img.shields.io/github/issues/yuvrajiro/imbalanced-spdf?style=flat-square)
+![GitHub stars](https://img.shields.io/github/stars/yuvrajiro/imbalanced-spdf?style=flat-square)
 ![Python Version](https://img.shields.io/badge/python-%203.9-blue?style=flat-square)
-![Read the Docs](https://img.shields.io/readthedocs/imbalanced-svr?style=flat-square)
+![Read the Docs](https://img.shields.io/readthedocs/imbalanced-spdf?style=flat-square)
 
-> A  rich documentation is available at [Read the Docs](https://imbalanced-svr.readthedocs.io/en/latest/)
+> A  rich documentation is available at [Read the Docs](https://imbalanced-spdf.readthedocs.io/en/latest/)
 
 
 # Shape Penalized Decision Forests
@@ -33,7 +33,7 @@ Both implementations use the concept of **Surface-to-Volume Regularization (SVR)
 1. Downloading Locally and Installing
 
    ```bash
-   git clone https://www.github.com/yuvrajiro/imbalanced-svr.git
+   git clone https://www.github.com/yuvrajiro/imbalanced-spdf.git
    cd imbalance-svr
    ```
 
@@ -50,7 +50,7 @@ Both implementations use the concept of **Surface-to-Volume Regularization (SVR)
 2. Using pip install from GitHub
 
    ```bash
-   pip install git+https://www.github.com/yuvrajiro/imbalanced-svr.git
+   pip install git+https://www.github.com/yuvrajiro/imbalanced-spdf.git
    ```
    
 > This arrangement is temporary, and package will be available on PyPI soon.
@@ -65,7 +65,7 @@ Both implementations use the concept of **Surface-to-Volume Regularization (SVR)
 
 ```python
 import numpy as np
-from imbalanced_spbdf.ensemble import SPBoDF
+from imbalanced_spdf.ensemble import SPBoDF
 
 # Generate synthetic data
 X_train = np.random.rand(100, 5)
@@ -86,7 +86,7 @@ print("Predictions:", y_pred)
 #### Example
 
 ```python
-from imbalanced_spbdf.ensemble import SPBaDF
+from imbalanced_spdf.ensemble import SPBaDF
 
 # Generate synthetic data
 X_train = np.random.rand(100, 5)
@@ -189,6 +189,6 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 ## References
 
 - Zhu, Y., Li, C., & Dunson, D. B. (2023). "Classification Trees for Imbalanced Data: Surface-to-Volume Regularization." Journal of the American Statistical Association.
-- Scikit-learn API Documentation: https://scikit-learn.org/stable/documentation.html
+
 
 

@@ -15,7 +15,7 @@
    "execution_count": 1,
    "outputs": [],
    "source": [
-    "from imbalanced_spbdf.ensemble import SPBaDF\n",
+    "from imbalanced_spdf.ensemble import SPBaDF\n",
     "from sklearn.datasets import make_classification\n",
     "from sklearn.model_selection import train_test_split\n",
     "from sklearn.metrics import f1_score, roc_auc_score"

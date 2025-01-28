@@ -1,6 +1,6 @@
 Ensemble of svr tree
 ====================
-.. currentmodule:: imbalanced_spbdf
+.. currentmodule:: imbalanced_spdf
 
 .. autosummary::
     :toctree: generated/

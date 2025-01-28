@@ -5,7 +5,7 @@ requires      = ["setuptools>=64", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "imbalanced-spbdf"
+name = "imbalanced-spdf"
 version = "0.0.1"
 description = "A Python package for imbalanced learning with ensemble learning."
 readme = "README.md"
@@ -78,7 +78,7 @@ nbval = [
 include-package-data = false
 
 [tool.setuptools.packages.find]
-include = ["imbalanced*"]
+include = ["imbalanced_spdf*"]
 namespaces = false
 
 
