@@ -18,7 +18,7 @@ classifiers = [
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
 ]
-keywords = ["Proximity", "Machine Learning", "Survival Analysis", "Ensemble Learning"]
+keywords = ["Imbalanced Data", "Ensemble Learning", "Surface to Volume Ratio", "Computational Complexity"]
 dependencies = [
     "scikit-learn~=1.5.0",
     "numpy~=1.24.0",

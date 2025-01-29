@@ -16,7 +16,7 @@ imbalanced_spdf - Ensemble for Imbalanced Classification
         The simplest way to install imbalanced_spdf is by using Python's package manager pip:
 
         ```
-        pip install imbalanced_spdf
+        pip install imbalanced-spdf
         ```
 
     .. grid-item-card:: Jupyter Notebook Example for SPBaDF :fas:`book-open`

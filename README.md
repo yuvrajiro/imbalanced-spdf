@@ -52,8 +52,12 @@ Both implementations use the concept of **Surface-to-Volume Regularization (SVR)
    ```bash
    pip install git+https://www.github.com/yuvrajiro/imbalanced-spdf.git
    ```
+3. Using pip install from PyPi
+
+   ```bash
+    pip install imbalanced-spdf
+    ```
    
-> This arrangement is temporary, and package will be available on PyPI soon.
 
 ---
 
@@ -183,6 +187,14 @@ A bagging ensemble classifier that uses SVR-regularized trees to improve robustn
 ## License
 
 This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+## Citation
+
+If you are using this package in your research, please consider citing the following paper:
+
+```bibtex
+Shape Penalized Decision Forests for Imbalanced Data Classification : Rahul Goswami, Aindrila Garai, Payel Sadhukhan, Palash Ghosh, Tanujit Chakraborty
+```
 
 ---
 
