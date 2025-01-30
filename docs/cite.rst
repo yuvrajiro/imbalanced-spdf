@@ -1,7 +1,7 @@
-Citing imbalanced_spdf
+Citing imbalanced-spdf
 ======================
 
-If you are using **imbalanced_spdf** in your scientific research,
+If you are using **imbalanced-spdf** in your scientific research,
 please cite the following paper:
 
 Shape Penalized Decision Forests for Imbalanced Data Classification : Rahul Goswami, Aindrila Garai, Payel Sadhukhan, Palash Ghosh, Tanujit Chakraborty, Preprint Sumbitted to IEEE Access, 2025
