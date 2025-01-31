@@ -34,7 +34,7 @@ Both implementations use the concept of **Surface-to-Volume Regularization (SVR)
 
    ```bash
    git clone https://www.github.com/yuvrajiro/imbalanced-spdf.git
-   cd imbalance-svr
+   cd imbalance-spdf
    ```
 
 2. Install dependencies:
