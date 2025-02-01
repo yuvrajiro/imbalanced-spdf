@@ -193,7 +193,7 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 If you are using this package in your research, please consider citing the following paper:
 
 ```bibtex
-Shape Penalized Decision Forests for Imbalanced Data Classification : Rahul Goswami, Aindrila Garai, Payel Sadhukhan, Palash Ghosh, Tanujit Chakraborty
+- Goswami, R., Garai, A., Sadhukhan, P., Ghosh, P., Chakraborty, T. (2025). "Shape Penalized Decision Forests for Imbalanced Data Classification". Submitted for Publication 
 ```
 
 ---
